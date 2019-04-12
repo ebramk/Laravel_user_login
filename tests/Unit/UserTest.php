@@ -15,21 +15,22 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function Inttest()
+    public function testInteger()
     {
         $user = User::inRandomOrder() ->first();
 
         $this->assertInternalType('int',$user->id);
 
     }
-
-    public function Strtest()
+    public function testString()
     {
         $user = User::inRandomOrder() ->first();
 
-        $this->assertInternalType('str',$user->name);
+        $this->assertInternalType('string',$user->name);
 
     }
+
+
 
 }
 ?>
