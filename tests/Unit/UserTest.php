@@ -15,7 +15,7 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function Inttest()
     {
         $user = User::inRandomOrder() ->first();
 
